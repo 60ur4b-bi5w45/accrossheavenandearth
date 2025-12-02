@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- buetctf OSINT: always view the source. -->
+
+  <metadata>
+    {
+      "challenge": "1",
+      "note": "all that remains is this profile badge",
+      "username": "TheHonouredOne",
+      "platform": "influencer",
+      "hint_binary": "01001101 01100101 01110100 01100001 00100000 01100100 01100001 01110100 01100001 00100000 01110011 01100001 01110110 01100101 01110011 00100000 01110100 01101000 01100101 00100000 01100100 01100001 01111001 00100001"
+    }
+  </metadata>
+
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bg)" />
+
+  <!-- Dark overlay bar -->
+  <rect x="0" y="260" width="800" height="140" fill="#000000" opacity="0.7" />
+
+  <!-- Big warning text -->
+  <text x="50%" y="305" fill="#f97373" font-size="36"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="Segoe UI, system-ui, sans-serif">
+    You have been Hacked.
+  </text>
+
+  <text x="50%" y="345" fill="#e5e7eb" font-size="12"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="monospace">
+    01001101 01100101 01110100 01100001 00100000 01100100 01100001 01110100 01100001 00100000 01110011 01100001 01110110 01100101 01110011 00100000 01110100 01101000 01100101 00100000 01100100 01100001 01111001 00100001
+  </text>
+</svg>
